@@ -12,9 +12,16 @@
     "discordapp",
     "fast"
   ],
-  "author": "Seraph",
+  "authors": [
+    "Seraph",
+    "ERXTeam"
+  ],
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syntx-js/syntx"
   }
 }
