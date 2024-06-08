@@ -8,9 +8,11 @@
   },
   "keywords": [
     "discord",
+    "api",
     "syntx",
     "discordapp",
-    "fast"
+    "bot",
+    "client"
   ],
   "authors": [
     "Seraph",
@@ -23,5 +25,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/syntx-js/syntx"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/syntx-js/syntx/issues"
+  },
+  "homepage": "https://roxs.gibook.io"
 }
