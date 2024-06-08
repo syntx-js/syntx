@@ -29,3 +29,67 @@
      <a href="https://roxs.gitbook.io"><b>Documentation</b></a>
   </p>
 </div>
+
+Syntx.js is an NPM package designed to simplify and accelerate the creation of Discord bots. Although it is still under development, Syntx.js offers a wide range of functions for enhancing your bot. It utilizes a JSON-based structure for ease of use and flexibility. For further information or assistance, feel free to reach out to us via our [support server](https://discord.gg/invite/QQrSgyvykj) or through our [email syntxjs@gmail.com](https://mail.google.com/mail/u/0/?fs=1&to=syntxjs@gmail.com&su=Help+me&tf=cm).
+
+# Tables of contents
+- [Tables of contents](#tables-of-contents)
+  - [How to create a new client](#how-to-create-a-new-client)
+    - [Request the library](#request-the-library)
+    - [Create the new client](#create-the-new-client)
+    - [Run the bot](#run-the-bot)
+- [Example using the command method](#example-using-the-command-method)
+
+## How to create a new client
+### Request the library
+First, we must request `ERXClient` and `Intents` from the `syntx.js` library.
+```js
+const { ERXClient, Intents } = require("syntx.js")
+```
+### Create the new client
+Next, create a new `ERXClient` instance by passing in a configuration object with the necessary properties.
+```js
+const client = new ERXClient({
+    prefix: "!",
+    intents: [Intents.All], // This can be changed by numbers. For example, all Discord intents in numbers are: 3276799
+    token: "YOUR_DISCORD_BOT_TOKEN"
+})
+```
+
+|  OPTION   |  TYPE          | DESCRIPTION                                             |
+| --------- | -------------- | ------------------------------------------------------- |
+| `prefix`  | srting         | The symbol with which you will start all your commands. |
+| `intents` | array / number | The number of intents the bot will have. |
+| `token`   | string         | your bot token.
+
+### Run the bot
+To run the client, we must use the `start` method.
+```js
+client.start()
+```
+
+# Example using the command method
+```js
+const { ERXClient, Intents } = require("syntx.js")
+
+const client = new ERXClient({
+    prefix: "!",
+    intents: [Intents.All],
+    token: "YOUR_DISCORD_BOT_TOKEN"
+})
+
+client.ready(() => {
+    console.log(`Bot ${client.bot.user.username} ready.`)
+})
+
+client.command({
+    name: "hi", // Command name.
+    content: (message) => {
+        message.channel.send(`Hi ${message.author.username}!`)
+    }
+})
+
+client.start()
+```
+
+More information in our [documentation](https://roxs.gitbook.io).
