@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="">
+  <a href="https://roxs.gitook.io">
     <img width="500" src="https://github.com/rqnjs/website/blob/main/img/syntx.js.png?raw=true" alt="Syntx.js">
   </a>
 </p>
@@ -26,6 +26,6 @@
   </a>
 
   <p>
-     <a href=""><b>Documentation</b></a>
+     <a href="https://roxs.gitbook.io"><b>Documentation</b></a>
   </p>
 </div>
